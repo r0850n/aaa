@@ -18,3 +18,5 @@ class LoadDriver_realDevice(object):
         # Adding appWait Activity since the activity name changes as the focus shifts to the ATP WTA app's first page
         #desired_caps['appWaitActivity'] = '.activity.root.TournamentList'
         return webdriver.Remote(settings.appiumHub, desired_caps)
+
+
