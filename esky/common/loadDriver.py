@@ -33,7 +33,7 @@ class LoadDriver_realDevice(object):
         'platformName': 'Android',
         'platformVersion': '4.3',
         'deviceName': settings.s_3,
-        'app': PATH(r'../../esky/app/' + app),
+        'app': PATH('../../esky/app/' + app),
         'newCommandTimeout': 240
         }
 
