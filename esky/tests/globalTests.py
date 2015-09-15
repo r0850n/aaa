@@ -9,7 +9,7 @@ from pages.pageLocators import Global_Methods, Home_Page, Airports_search
 
 
 
-class Android_esky_app(unittest.TestCase):
+class First_esky_test(unittest.TestCase):
     "Class to run tests against the ATP WTA app"
 
     S3 = '4df13ae160004fe1'
@@ -58,5 +58,5 @@ class Android_esky_app(unittest.TestCase):
 
 #---START OF SCRIPT
 if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(Android_esky_app)
+    suite = unittest.TestLoader().loadTestsFromTestCase(First_esky_test)
     unittest.TextTestRunner(verbosity=2).run(suite)

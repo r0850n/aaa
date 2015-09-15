@@ -4,10 +4,16 @@ from common.pageobject_support import cacheable, callable_find_by as find_by, ca
 from time import sleep
 import time
 
+#chose your language
+class Welcome_Page(object):
+    #Polski
+    PL = find_by(how=By.ID, using='com.esky:id/lang_chooser_PL')
+    BG = find_by(how=By.ID, using='com.esky:id/lang_chooser_BG')
+    #Română
+    RO = find_by(how=By.ID, using='com.esky:id/lang_chooser_RO')
 
-
-
-
+    def __init__(self,driver):
+        self._driver = driver
 
 class Home_Page(object):
     

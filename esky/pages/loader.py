@@ -5,6 +5,7 @@ from common.pageobject_support import cacheable, callable_find_by as find_by, ca
 from calendar import month
 
 
+
 class Loader(object):
 
     def __init__(self, driver):
@@ -12,6 +13,9 @@ class Loader(object):
 
     def get_HomePage(self):
         return Home_Page(self.driver)
+    
+    def get_Welcome_Page(self):
+        return Welcome_Page(self.driver)
 
     def get_Airports_Page(self):
         return Airports_search(self.driver)
@@ -33,15 +37,23 @@ class Loader(object):
         self.get_HomePage().DEPARTUE_INPUT().click()
         self.get_Airports_Page().NAME_CITY_FROM().send_keys(location)
         self.get_Airports_Page().Results_cities()[0].click()
-        time.sleep(5)
+        #time.sleep(2)
      
     def setLocationTo(self,location): 
         self.get_HomePage().DESTIN_INPUT().click()
         self.get_Airports_Page().NAME_CITY_FROM().send_keys(location)
         self.get_Airports_Page().Results_cities()[0].click()
-        time.sleep(5)
+        #time.sleep(2)
           
-        
+  
+  #chose your language
+class Welcome_Page(object):
+    #Polski
+    PL = find_by(how=By.ID, using='com.esky:id/lang_chooser_PL')
+    BG = find_by(how=By.ID, using='com.esky:id/lang_chooser_BG')
+     #ro
+    RO = find_by(how=By.ID, using='com.esky:id/lang_chooser_RO')
+      
 class Home_Page(Loader):
     
     MENU_BUTTON = find_by(how=By.CLASS_NAME, using='android.widget.ImageButton')
@@ -121,8 +133,8 @@ class Global_Methods(Loader):
         self.setArrivalDate(date2)
         
         self.get_HomePage().SEARCH_BUTTON().click()
-        time.sleep(5)
-        
+        #time.sleep(2)
+    
 
     def __init__(self, driver):
         self._driver = driver
