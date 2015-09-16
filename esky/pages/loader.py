@@ -76,7 +76,7 @@ class Airports_search(object):
     Results_cities = callable_find_by(how=By.XPATH, using='//android.support.v7.widget.RecyclerView/android.widget.RelativeLayout'
                                       ,multiple=True)
     
-    
+   # def select_travel_where(self,travel_time=None, time_dep=None):
    
         
     def __init__(self,driver):
@@ -99,6 +99,8 @@ class CallendarPage(Loader):
     def __init__(self,driver):
         self._driver = driver      
         Loader.__init__(self, driver)
+        
+
         
 class Global_Methods(Loader):
 
