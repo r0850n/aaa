@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import os
-from common import settings
+
 
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(
@@ -25,7 +25,7 @@ def get_desired_capabilities(app):
     desired_caps = {
         'platformName': 'Android',
         'platformVersion': '4.3',
-        'deviceName': settings.s_3,
+        'deviceName': '4df13ae160004fe1',
         'app': PATH('../../apps/' + app),
         'newCommandTimeout': 240
     }
