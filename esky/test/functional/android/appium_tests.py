@@ -23,7 +23,7 @@ from time import sleep
 from selenium.common.exceptions import NoSuchElementException
 
 from appium import webdriver
-from test.functional.android import desire_capabilities
+import desire_capabilities
 
 
 
