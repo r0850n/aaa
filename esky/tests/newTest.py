@@ -17,9 +17,9 @@ class Android_esky_app(unittest.TestCase,Loader):
     S3 = '4df13ae160004fe1'
     def setUp(self):
        
-        #self.driver = LoadDriver_realDevice.loadAppiumDriver()
-         desired_caps = LoadDriver_realDevice.get_desired_capabilities('com.esky.apk')
-         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+        self.driver = LoadDriver_realDevice.loadAppiumDriver()
+         #desired_caps = LoadDriver_realDevice.get_desired_capabilities('com.esky.apk')
+         #self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
         
        
     def tearDown(self):
