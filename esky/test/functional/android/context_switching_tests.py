@@ -16,12 +16,13 @@ import unittest
 
 from appium import webdriver
 from appium.common.exceptions import NoSuchContextException
-import desired_capabilities
+
+from test.functional.android import desire_capabilities
 
 
 class ContextSwitchingTests(unittest.TestCase):
     def setUp(self):
-        desired_caps = desired_capabilities.get_desired_capabilities('selendroid-test-app.apk')
+        desired_caps = desire_capabilities.get_desired_capabilities('selendroid-test-app.apk')
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
     def test_contexts_list(self):
