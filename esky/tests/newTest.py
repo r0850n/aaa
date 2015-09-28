@@ -34,11 +34,11 @@ class Android_esky_app(unittest.TestCase,Loader):
         time.sleep(5) 
 #         try:
         
-        action = TouchAction(self.driver)
-        action.press(self.get_HomePage().MENU_BUTTON()).perform()
+        # action = TouchAction(self.driver)
+        # action.press(self.get_HomePage().MENU_BUTTON()).perform()
         #self.get_HomePage().MENU_BUTTON().click()
         # self.get_Menu().goto_Cars()
-       # self.get_Global_Methods().travel_from_to(data["roundtrip"],data["from"] , data["to"],data["month"],data["date1"], data["date2"])
+        self.get_Global_Methods().travel_from_to(data["roundtrip"],data["from"] , data["to"],data["month"],data["date1"], data["date2"])
         
         # except:
 #            self.get_Welcome_Page().PL().click()
