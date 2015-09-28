@@ -10,11 +10,9 @@ class SetupTestSuper (unittest.TestCase):
     
 
     def suite():
-         suite = unittest.TestSuite()
-         suite.addTest(Android_esky_app())
-        
-
-         return suite
+        suite = unittest.TestSuite()
+        suite.addTest(Android_esky_app())
+        return suite
 
  
 
@@ -22,8 +20,8 @@ class SetupTestSuper (unittest.TestCase):
 
     if __name__ == '__main__':
 
-         runner = unittest.TextTestRunner()
+        runner = unittest.TextTestRunner()
 
-         test_suite = suite()
+        test_suite = suite()
 
-         runner.run(test_suite)
+        runner.run(test_suite)

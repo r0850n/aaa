@@ -5,7 +5,7 @@ __author__ = 'robert'
 import unittest, time, os
 from appium import webdriver
 from time import sleep
-from pages.pageLocators import Global_Methods, Home_Page, Airports_search
+from locators.pageLocators import Global_Methods, Home_Page, Airports_search
 
 
 

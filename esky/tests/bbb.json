@@ -1,7 +1,9 @@
 [
+ 
  {
-    "from": "Warszawa",
-    "to": "Londyn",
+    "roundtrip": "",
+    "from": "wroclaw",
+    "to": "moskwa",
     "month": "Listopad 2015",
     "date1": "10",
     "date2": "21",
@@ -9,16 +11,8 @@
 
   },
   {
-    "from": "Katowice",
-    "to": "Londyn",
-    "month": "Listopad 2015",
-    "date1": "10",
-    "date2": "21",
-    "succes": "True"
-    
-  },
- {
-     "from": "wroclaw",
+    "roundtrip": "true",
+    "from": "wroclaw",
     "to": "moskwa",
     "month": "Listopad 2015",
     "date1": "10",
